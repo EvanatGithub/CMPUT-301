@@ -12,7 +12,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter in a sentence (100 CHAR MAX): ");
         System.out.println(" ");
-
+        System.out.print("You: ");
         sentence = scanner.nextLine();
         scanner.close();
         char[] newSentence = new char[sentence.length()+1];
