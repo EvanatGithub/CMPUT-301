@@ -32,9 +32,10 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
+        android:focusableInTouchMode="false"
         android:hint="Time"
         android:inputType="time" />
-
+        <!--android:focusableInTouchMode="false" is needed otherwise double-click -->
     <EditText
         android:id="@+id/Date"
         android:layout_width="403dp"
@@ -69,9 +70,10 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
+        android:digits="0123456789"
         android:hint="Systolic Pressure "
         android:inputType="numberSigned" />
-
+    <!-- not allowing for entry of . or - in keypad -->
     <EditText
         android:id="@+id/diastolic"
         android:layout_width="403dp"
@@ -87,9 +89,10 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
+        android:digits="0123456789"
         android:hint="Diastolic Pressure"
         android:inputType="numberSigned" />
-
+        <!-- not allowing for entry of . or - in keypad -->
     <EditText
         android:id="@+id/heartrate"
         android:layout_width="403dp"
@@ -105,6 +108,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
+        android:digits="0123456789"
         android:hint="Heart Rate"
         android:inputType="numberSigned" />
 
@@ -117,7 +121,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginBottom="0dp"
         android:ems="10"
-        android:hint="Comments"
+        android:hint="Comments (optional)"
         android:inputType="textPersonName" />
 
 </RelativeLayout>

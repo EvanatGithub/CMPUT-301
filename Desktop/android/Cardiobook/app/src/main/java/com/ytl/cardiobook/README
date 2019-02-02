@@ -10,3 +10,12 @@
   * @author ytl
   * implemented the date in the scroll picker format, also displayed
   */
+  /**
+    * Ver 3 Created Feb 02, 2019 4:54pm
+    * by Evan Li
+    * @author ytl
+    * implemented almost everything
+    * now able to enter in all data, data is saved
+    * error checks to make sure all fields are filled
+    * flags measurements out of normal range
+    */
