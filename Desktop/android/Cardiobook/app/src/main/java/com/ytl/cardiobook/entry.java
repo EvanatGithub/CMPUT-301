@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class entry {
-	private Date Date;
+	private String Date;
 	private Time Time;
 	private int systolicPressure;
 	private int diastolicPressure;
@@ -13,9 +13,14 @@ public class entry {
 	private String comment;
 	
 	public entry() {
-
+		
+		this.Date = "";
 		this.comment = "comment";
 
+	}
+	
+	public void setDate(String date) {
+		Date = date;
 	}
 	
 	public void setComment(String comment) {
@@ -28,6 +33,6 @@ public class entry {
 	
 	@Override
 	public String toString(){
-		return comment;
+		return "Date: " + Date + "\n" + comment;
 	} //need toString method, other wise prints com.ytl.cardiobook@entryGibberish
 }

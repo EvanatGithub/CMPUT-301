@@ -23,7 +23,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 /**
- * Ver 1 Created Jan 02, 2019
+ * Ver 2 Created Feb 02, 2019
  * by Evan Li
  * @author ytl
  */
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
 		}
 	}
 	
-	public void erase(View view) {
+	public void clearAll(View view) {
 		allEntries.clear();
 		adapter.notifyDataSetChanged();
 		saveInFile();

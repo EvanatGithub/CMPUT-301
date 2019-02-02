@@ -1,0 +1,12 @@
+/**
+ * Ver 1 Created Feb 01, 2019
+ * by Evan Li
+ * @author ytl
+ * implemented + and x buttons, only able to enter comments and display them
+ */
+ /**
+  * Ver 2 Created Feb 02, 2019
+  * by Evan Li
+  * @author ytl
+  * implemented the date in the scroll picker format, also displayed
+  */
