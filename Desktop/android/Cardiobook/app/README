@@ -19,3 +19,13 @@
     * error checks to make sure all fields are filled
     * flags measurements out of normal range
     */
+    /**
+        * Ver 4 Created Feb 03, 2019 2:53am
+        * by Evan Li
+        * @author ytl
+        * it's not the most streamlined app in the world
+        * but everything that was required is in there
+        * oh fk i cant delete measurements yet, almost there
+        * "code is like farts and babies, we only love our own"
+        */
+

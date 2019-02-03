@@ -37,7 +37,7 @@ public class entry {
 	
 	public void setSystolicPressure(int systolic) {
 		if (systolic > 140 || systolic < 90){
-			this.systolicPressure = "*" + systolic + "*";
+			this.systolicPressure = "-" + systolic;
 		}else{
 			this.systolicPressure = Integer.toString(systolic);
 		}
@@ -46,7 +46,7 @@ public class entry {
 	
 	public void setDiastolicPressure(int diastolic) {
 		if (diastolic > 90 || diastolic < 60){
-			this.diastolicPressure = "*" + diastolic + "*";
+			this.diastolicPressure = "-" + diastolic;
 		}else{
 			this.diastolicPressure = Integer.toString(diastolic);
 		}
@@ -54,10 +54,30 @@ public class entry {
 	
 	public void setHeartRate(int rate) {
 		if (rate > 100 || rate < 60){ //60-100BPM as google says
-			this.heartRate = "*" + rate + "*";
+			this.heartRate = "-" + rate;
 		}else{
 			this.heartRate = Integer.toString(rate);
 		}
+	}
+	
+	public String getDate() {
+		return Date;
+	}
+	
+	public String getTime() {
+		return Time;
+	}
+	
+	public String getSystolicPressure() {
+		return systolicPressure;
+	}
+	
+	public String getDiastolicPressure() {
+		return diastolicPressure;
+	}
+	
+	public String getHeartRate() {
+		return heartRate;
 	}
 	
 	public String getComment() {
@@ -66,11 +86,12 @@ public class entry {
 	
 	@Override
 	public String toString(){
-		return "Date(yyyy-mm-dd): " + Date + "\n"
-				+ "Time(24hr): " + Time + "\n"
+		
+		return "Date(yyyy-mm-dd): " + Date + '\n'
+				+ "Time(24hr): " + Time + '\n'
 				+ "Systolic Pressure: " + systolicPressure + "mm Hg"+ "\n"
 				+ "Diastolic Pressure: " + diastolicPressure + "mm Hg"+ "\n"
 				+ "Heart Rate: " + heartRate + "BPM"+ "\n"
-				+ comment;
+				+ "Comment: " + comment;
 	} //need toString method, other wise prints com.ytl.cardiobook@entryGibberish
 }

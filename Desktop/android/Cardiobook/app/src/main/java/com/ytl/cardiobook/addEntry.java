@@ -131,7 +131,7 @@ public class addEntry extends AppCompatActivity {
 			}
 		};
 		saveButton.setOnClickListener(new View.OnClickListener() {
-
+			
 			@Override
 			public void onClick(View v) {
 				//implemented basically in order of how i figured it out
@@ -155,10 +155,12 @@ public class addEntry extends AppCompatActivity {
 					String date = Date.getText().toString();
 					String time = Time.getText().toString();
 					//flagging unusual entries done in entry class
+					
 					int systolic = new Integer(Systolic.getText().toString());
 					int diastolic = new Integer(Diastolic.getText().toString());
 					int rate = new Integer(Heart.getText().toString());
 					entry Entry = new entry();
+
 					Entry.setComment(comment);
 					Entry.setDate(date);
 					Entry.setTime(time);
@@ -250,4 +252,3 @@ public class addEntry extends AppCompatActivity {
 		alertDialog.show();
 	}
 }
-
