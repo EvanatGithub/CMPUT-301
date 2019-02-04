@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="ENTER" />
+
+    <EditText
+        android:id="@+id/Time"
+        android:layout_width="403dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        android:hint="Time"
+        android:inputType="time" />
+        <!--android:focusableInTouchMode="false" is needed otherwise double-click -->
+    <EditText
+        android:id="@+id/Date"
+        android:layout_width="403dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Time"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        android:hint="Date"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/systolic"
+        android:layout_width="403dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Date"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:digits="0123456789"
+        android:hint="Systolic Pressure "
+        android:inputType="numberSigned" />
+    <!-- not allowing for entry of . or - in keypad -->
+    <EditText
+        android:id="@+id/diastolic"
+        android:layout_width="403dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/systolic"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:digits="0123456789"
+        android:hint="Diastolic Pressure"
+        android:inputType="numberSigned" />
+        <!-- not allowing for entry of . or - in keypad -->
+    <EditText
+        android:id="@+id/heartrate"
+        android:layout_width="403dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diastolic"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:digits="0123456789"
+        android:hint="Heart Rate"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/comments"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/enter"
+        android:layout_alignBottom="@+id/enter"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="0dp"
+        android:ems="10"
+        android:hint="Comments (optional)"
+        android:maxLength="20"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>

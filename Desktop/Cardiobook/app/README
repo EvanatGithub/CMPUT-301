@@ -1,0 +1,21 @@
+/**
+ * Ver 1 Created Feb 01, 2019
+ * by Evan Li
+ * @author ytl
+ * implemented + and x buttons, only able to enter comments and display them
+ */
+
+/**
+    * Ver 5 Created Feb 03, 2019 4:00pm
+    * by Evan Li
+    * @author ytl
+    * it's not the most streamlined app in the world
+    * but everything that was required is in there
+    * little side note: i tried to download a plugin to generate uml documents, but it ended up
+        crashing android studio and corrupting all the files, so i re-downloaded android studio
+        but my Cardiobook app wont run anymore. i tried everything but can't find the problem.
+        "Cannot resolve symbol R"
+    * oh also a little cheat i did: because there was no specfications on how to flag values,
+        i couldn't figure out how to make text red, so i just flagged it with a "-" sign
+        because entry setters take an int argument to compare to see if it's in range
+    */
